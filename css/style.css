@@ -1,0 +1,27 @@
+body {
+  background: rgb(0, 7, 10);
+}
+h1 {
+  color: rgb(13, 100, 129);
+}
+h2 {
+  color: rgb(13, 150, 129);
+}
+.titulo {
+  color: rgb(13, 232, 129);
+}
+
+p {
+  color: white;
+}
+
+#subsubtitulo {
+  color: rgb(13, 95, 129);
+}
+
+.subtitulo {
+  color: rgb(13, 232, 129);
+}
+h1[class~=subpagina] {
+  background: black;
+}
