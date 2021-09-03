@@ -10,9 +10,7 @@ function makeChart(players) {
             datasets: [{
                 label: 'Ocupación de camas IRAG',
                 data: ocupacion,
-                backgroundColor: [
-                    'red'
-                ],
+                backgroundColor: ['#00566F'],
                 borderWidth: 0
             }]
         },
@@ -24,5 +22,5 @@ function makeChart(players) {
             }
         }
     });
-}
+};
 
