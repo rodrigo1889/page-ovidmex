@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Covid-19: Visualizaciones rápidas  </title>
@@ -5,14 +6,12 @@
         <meta charset="UTF-8">
         <meta description ="Visualizaciones de la covid en mex">
         <link rel="stylesheet" href="css/styles.css">
-        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.3.min.js" integrity="sha384-dM3QQsP+wXdHg42wTqW85BjZQdLNNIXqlPw/BgKoExPmTG7ZLML4EGqLMfqHT6ON" crossorigin="anonymous"></script>
-        <script type="text/javascript">
-            Bokeh.set_log_level("info");
-        </script>
         <script src="//www.amcharts.com/lib/4/core.js"></script>
         <script src="//www.amcharts.com/lib/4/charts.js"></script>
     </head>
     <body>
+        
+
         
         
 
@@ -82,6 +81,18 @@
                     en uso.  </h3>
                 <br>
 
+                <section>
+                    <h2>Avance del programa: Uso diario de dosis </h2>
+        
+                    <div id="administradas">
+                        <script src="//www.amcharts.com/lib/4/core.js"></script>
+                        <script src="//www.amcharts.com/lib/4/charts.js"></script>
+                        <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+                        <script src="Java/daily-vax.js"></script>
+                    </div>
+                    <h3> El avance diario mostrado no toma en cuenta la diferencia entre dosis diarias administradas para primera o para segunda dosis </h3>
+                </section>
+
                 <h2> Entregas de las marcas hasta el momento: Sustancia (Farmaceutica) </h2>
 
                 <div>
@@ -90,67 +101,50 @@
                     <script src="https://d3js.org/d3.v7.min.js"></script>
                     <script src="Java/vacuna.js"></script>
                 </div>
+                <div class="row">
+                    <div class="column" style="background-color: #C3E5CA;">
+                        <h2>Porcentaje de entregas </h2>
 
-                <div class="column" style="background-color: #C3E5CA;">
-                    <h2>Porcentaje de entregas </h2>
-                    <div id="porcentajes" >
-                        <script src="//www.amcharts.com/lib/4/core.js"></script>
-                        <script src="//www.amcharts.com/lib/4/charts.js"></script>
-                        <script src="Java/porcenjates.js"></script>
+                        <div id="porcentajes" >
+                            <script src="//www.amcharts.com/lib/4/core.js"></script>
+                            <script src="//www.amcharts.com/lib/4/charts.js"></script>
+                            <script src="Java/porcenjates.js"></script>
+                        </div>       
                     </div>
-                    
 
-                          
-                </div>
+                    <div class="column" style="background-color: #E4E5C2;">
+                        <h2>Dosis compradas </h2>
 
-                <div class="column" style="background-color: #E4E5C2;">
-                    <h2>Dosis compradas </h2>
-                    <div id="compradas">
-                        <script src="//www.amcharts.com/lib/4/core.js"></script>
-                        <script src="//www.amcharts.com/lib/4/charts.js"></script>
-                        <script src="Java/compradas.js"></script>
+                        <div id="compradas">
+                            <script src="//www.amcharts.com/lib/4/core.js"></script>
+                            <script src="//www.amcharts.com/lib/4/charts.js"></script>
+                            <script src="Java/compradas.js"></script>
+                        </div>   
                     </div>
-                    
-                    
                 </div>
-
-                
             </section>
-
+            <br> 
+            <br>
             <section>
-                <br> 
-                <br>
                 <h2> Avance del programa Nacional de Vacunación </h2>
-
                 <h3> 
                     La meta es vacunar a más o menos cerca de 90 millones de Mexicanos (si todos aceptaran recibirla). 
                 </h3>
-
                 <div>
                     <canvas id="vaccines2" width="10000" height="3000"></canvas>
                     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
                     <script src="https://d3js.org/d3.v7.min.js"></script>
                     <script src="Java/vacunas2.js"></script>
                 </div>
+            </section>
+            
 
-
-                <br>
-                <br>
-
-                <h2>Avance del programa: Uso diario de dosis </h2>
-
-                <div id="administradas">
-                    <script src="//www.amcharts.com/lib/4/core.js"></script>
-                    <script src="//www.amcharts.com/lib/4/charts.js"></script>
-                    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
-                    <script src="Java/daily-vax.js"></script>
-                 </div>
-                <h3> El avance diario mostrado no toma en cuenta la diferencia entre dosis diarias administradas para primera o para segunda dosis </h3>
+                
 
                 
 
 
-            </section>
+            
 
 
             

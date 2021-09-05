@@ -12,7 +12,18 @@ function makeChart(vacunas) {
                 data: entregas,
                 backgroundColor: ['#00566F',"#20A39E","#EF5B5B","#FFC857","#424b54","#666e5a","#b66f65"],
                 borderWidth: 0
-            }]
+            }],
+            options: {
+                plugins: {
+                    legend: {
+                        labels: {
+                            font: {
+                                family: 'Gill Sans'
+                            }
+                        }
+                    }
+                }
+            }
         },
     });
-}
+};

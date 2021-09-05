@@ -30,7 +30,16 @@ function makeChart(vaccines) {
                 //fill: true,
                 //tension: 0.1
             }
-            ]
+            ],
+            options: {
+                plugins: {
+                    labels: {
+                        font: {
+                            family: "Gill Sans"
+                        }
+                    }
+                }
+            }
         },
     });
 };

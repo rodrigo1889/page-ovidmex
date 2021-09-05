@@ -16,7 +16,7 @@ var series1 = chart.series.push(new am4charts.ColumnSeries());
 series1.dataFields.categoryY = "abrev";
 series1.dataFields.valueX = "Dosis_comp";
 series1.name = "Dosis adquiridas";
-series1.columns.template.fill = "#20A39E";
+series1.columns.template.fill = "#00566F";
 
 var valueLabel = series1.bullets.push(new am4charts.LabelBullet());
 valueLabel.label.text = "{Dosis_comp}";
