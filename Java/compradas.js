@@ -1,4 +1,5 @@
 var chart = am4core.create("compradas",am4charts.XYChart);
+am4core.useTheme(am4themes_animated);
 
 
 chart.dataSource.url = "Datos/new_Vacunas.csv";

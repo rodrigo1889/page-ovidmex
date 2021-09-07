@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Covid-19: Visualizaciones rápidas  </title>
@@ -24,10 +25,9 @@
                             <a href="index.html" class="navbar__links" id="home-page">
                                 Nacional
                             </a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="vacunas.html" class="navbar__links" id="vacunacion-page">
-                                Vacunacion
+                        </li><li class="navbar__item">
+                            <a href="vacunas.html" class="navbar__links" id="forecast-page">
+                                Vacunación
                             </a>
                         </li>
                         <li class="navbar__item">
@@ -48,6 +48,12 @@
                             </a>
                         </li>
 
+                        <li class="navbar__item">
+                            <a href="predicciones.html" class="navbar__links" id="forecast-page">
+                                Forecast
+                            </a>
+                        </li>
+
                         <li class="navbar__btn">
                             <a href="referencias.html" class="button" id="otros-page">
                                 Otros
@@ -58,6 +64,21 @@
                 </div>
             </nav>
             <script src="Java/app.js"></script>
+
+            <section>
+                <h2> Situación epidémica en el valle de México </h2>
+                <div id="weeklyzmvm">
+                    <script src="//www.amcharts.com/lib/4/core.js"></script>
+                    <script src="//www.amcharts.com/lib/4/charts.js"></script>
+                    <script src="//www.amcharts.com/lib/4/themes/animated.js"></script>
+                    <script src="Java/weekly-cases.js"></script>
+                </div> 
+
+                <h3>Los casos del Valle de México toman en cuenta toda la Ciudad de México y los municipios que se encuentran dentro
+                    de la denomaniación de Zona Metropolitana del INEGI. Pasa a las referencias si te interesa un poco más de esto. 
+                    
+                </h3>
+            </section>
 
 
 
