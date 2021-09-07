@@ -2,7 +2,7 @@
 
 ### Sobre los datos 
 
-Para acceder a los Datos en crudo, por si se desea se puede usar libremente "/Datos/"  
+Para acceder a los Datos para las visualizaciones por si se desea se puede usar libremente "/Datos/"  
 
 >To acess the database just feel free to use "/Datos/" folder's contents
 
