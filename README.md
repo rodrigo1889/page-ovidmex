@@ -19,7 +19,7 @@ Dentro de dicha carpeta, "/Datos/Complete" contiene los datos procesados de la D
 - [ ] Situación nacional de casos, defunciones y grupos de edad/ National state of cases, deaths and age groups.
 - [ ] Cálculo del Rt/ Rt's calculation 
 - [ ] Situación de la Ciudad de México/Mexico City situation
-- [ ] Ensamble de Forecast con d3foresight/ Forecast with d3ensemble
+- [ ] Ensamble de Forecast con D3 Foresight/ Forecast with D3 Foresight
 - [ ] Colocar las referencias dentro de la página/Put references inside page
 - [ ] Colocar sugerencias/ Put suggestion from readers 
 - [ ] Dinámica hospitalaria de la CDMX/ Mexico City's hopital occupancy
