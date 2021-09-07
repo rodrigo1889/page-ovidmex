@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+## Bienvenido al respositorio de la página
 
-You can use the [editor on GitHub](https://github.com/rodrigo1889/page-ovidmex/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+### Sobre los datos 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Para acceder a los Datos en crudo, por si se desea se puede usar libremente "/Datos/"  
 
-### Markdown
+>To acess the database just feel free to use "/Datos/" folder's contents
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Dentro de dicha carpeta, "/Datos/Complete" contiene los datos procesados de la Dirección General de Epidemiología DGE para todas las entidades federativas, actualizados por mí todos los domingos a eso de las 22:00 hrs del centro de México. Algunos datos como la llegada de vacunas se actualizarán en tiempo real en la medida de lo posible.
 
-```markdown
-Syntax highlighted code block
+> Inside "/Datos/Complete/" is the analyzed data for all states, extracted from _Dirección General de Epidemiología (DGE)_, (equivalent to CDC), updated by me every Sunday at about 22:00 hrs Central Mexico time. Some data such as the arrival of vaccines will be updated in real time as far as possible.
 
-# Encabezado 1
-## Header 2
-### Header 3
+¿Qué sigue?
+>What's next?
 
-- Bulleted
-- List
+### Pendientes 
 
-1. Numbered
-2. List
+- [x] Visualizaciones de llegada de vacunas y su uso en México/ Mexico's covid vaccines administration visualization
+- [ ] Situación nacional de casos, defunciones y grupos de edad/ National state of cases, deaths and age groups.
+- [ ] Cálculo del Rt/ Rt's calculation 
+- [ ] Situación de la Ciudad de México/Mexico City situation
+- [ ] Ensamble de Forecast con d3foresight/ Forecast with d3ensemble
+- [ ] Colocar las referencias dentro de la página/Put references inside page
+- [ ] Colocar sugerencias/ Put suggestion from readers 
+- [ ] Dinámica hospitalaria de la CDMX/ Mexico City's hopital occupancy
+- [ ] Situación de la zona metropolitana de La Laguna/ La Laguna metropolitan area's situation
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+## MENSAJE IMPORTANTE
+Por favor: VACÚNATE
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+>Please, get the vaccine.
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rodrigo1889/page-ovidmex/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+Si lo deseas, puedes descargar los datos crudos en [DGE](https://www.gob.mx/salud/documentos/datos-abiertos-152127)  
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+> If you wish, you can download the raw data in [DGE](https://www.gob.mx/salud/documentos/datos-abiertos-152127) (In spanish)
+
+Este sitio se construyó usando [GitHub Pages](https://pages.github.com/)
+> This site was build using [GitHub Pages](https://pages.github.com/)
+
