@@ -1,7 +1,7 @@
 var chart = am4core.create("internacional-vaccines",am4charts.XYChart);
 am4core.useTheme(am4themes_animated);
 
-chart.dataSource.url = "Datos/international-vaccines.csv";
+chart.dataSource.url = "https://raw.githubusercontent.com/rodrigo1889/page-ovidmex/main/Datos/international-vaccines.csv";
 chart.dataSource.parser = new am4core.CSVParser();
 chart.dataSource.parser.options.useColumnNames = true;
 chart.dataSource.dateFormat = "yyyy-MM-dd";
