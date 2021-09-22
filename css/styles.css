@@ -7,6 +7,12 @@ body {
     height: 600px;
 }
 
+
+#cdmx-vaccines {
+    width: 100%;
+    height: 500px;
+}
+
 #administradas{
     width: 100%;
     height: 500px;
