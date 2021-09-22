@@ -33,6 +33,49 @@ df3_res["week"] = df3_res["index"].dt.strftime("%U-%Y")
 df3_res.to_csv("WeeklyZMVM.csv",index=False)
 
 
+china = pd.DataFrame(pd.read_csv("/home/rodrigo/Documentos/Programitas/Sitio/Datos/China.csv"))
+mexico = pd.DataFrame(pd.read_csv("/home/rodrigo/Documentos/Programitas/Sitio/Datos/Tabla-vacunados.csv"))
+mexico = mexico[["date","Por100"]]
+china = china[["Fecha","Por100"]]
+
+
+dates_china = [datetime.datetime.strptime(x,"%Y-%m-%d") for x in china["Fecha"]]
+dates_mexico = [datetime.datetime.strptime(x,"%Y-%m-%d") for x in mexico["date"]]
+china.index = dates_china
+mexico.index = dates_mexico
+mexico = mexico[["Por100"]]
+china = china[["Por100"]]
+
+m1 = pd.merge(mexico,china,how="right",left_index=True,right_index=True)
+m1.columns = ["Mexico","China"]
+
+data = pd.DataFrame(pd.read_csv("https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.csv",usecols=["location","date","total_vaccinations_per_hundred"]))
+"""
+Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021). https://doi.org/10.1038/s41562-021-01122-8
+
+Usando la base de datos de <<Our World in Data>> con las correcciones a los datos Mexicanos y Chinos, ambos con muchos huecos. 
+
+"""
+
+
+
+names = ["Argentina","Paraguay","Chile","United States","Canada","Brazil","Cuba","El Salvador","Panama","Colombia","Peru","Uruguay","Russia","Germany","United Kingdom"]
+
+lista = {}
+for i in range(len(names)):
+    lista[names[i]] = pd.DataFrame(data.loc[data['location'] == names[i]])
+for j in range(len(lista)):
+    lista[names[j]].index = [datetime.datetime.strptime(x,"%Y-%m-%d") for x in lista[names[j]]["date"]]
+    lista[names[j]] = lista[names[j]][["total_vaccinations_per_hundred"]]
+
+
+merged = pd.concat([lista[names[j]] for j in range(len(names))] ,axis=1)
+merged.columns = names
+
+total = pd.merge(m1,merged,how="outer",left_index=True,right_index=True)
+total["date"] = total.index
+
+total.to_csv("international-vaccines.csv",index=False)
 
 
 
