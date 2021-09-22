@@ -17,7 +17,7 @@ valueAxis.max = 100;
 
 var series1 = chart.series.push(new am4charts.ColumnSeries());
 series1.dataFields.categoryY = "abrev";
-series1.dataFields.valueX = "Porcentaje";
+series1.dataFields.valueX = "Porcentaje"; 
 series1.name = "Porcentaje de entregas (%)"
 
 series1.heatRules.push({

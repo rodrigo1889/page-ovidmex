@@ -1,8 +1,9 @@
 let config = {
   pointType: 'mmwr-week', // Default is week
+  
   axes: {
     y: {
-      title: 'Random numbers' // Title for the y axis
+      title: 'Weekly deaths' // Title for the y axis
     }
   }
 }
@@ -34,13 +35,13 @@ let data = {
   timePoints,
   models: [
     {
-      id: 'mod',
+      id: 'SIRD',
       meta: {
-        name: 'Name',
-        description: 'Model description here',
+        name: 'Simple SIRD',
+        description: 'Basado en el model compartamental simple',
         url: 'http://github.com'
       },
-      pinned: false, // Setting true shows the model in top section of the legend
+      pinned: true, // Setting true shows the model in top section of the legend
                      // In case of absence of `pinned` key (or false), the model
                      // goes in the bottom section
       predictions,
@@ -67,6 +68,6 @@ let data = {
 let timeChart = new d3Foresight.TimeChart('#timechart', config);
 timeChart.plot(data);
 timeChart.update(10);
-//window.timeChart = timeChart;
+window.timeChart = timeChart;
 
 
