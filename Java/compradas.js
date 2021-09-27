@@ -4,7 +4,7 @@ am4core.useTheme(am4themes_animated);
 
 chart.dataSource.url = "Datos/new_Vacunas.csv";
 chart.dataSource.parser = new am4core.CSVParser();
-chart.dataSource.parser.options.useColumnNames = true;
+chart.dataSource.parser.options.useColumnNames = true; 
 
 
 var categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());

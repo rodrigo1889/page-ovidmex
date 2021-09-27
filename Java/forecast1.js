@@ -11,7 +11,7 @@ let timePoints = [Array(51).keys()].map(w => {
   return { week: w + 1, year: 2016 }
 })
 
-function rseq (n) {
+function rseq(n) {
 let seq = [Math.random()]
 for (let i = 1; i < n; i++) {
     seq.push(Math.random() * (1 + seq[i - 1]))
@@ -19,6 +19,7 @@ for (let i = 1; i < n; i++) {
 return seq
 }
   
+let actual = rseq(20).concat(timePoints.slice(20).map(tp => null))
   // Predictions look like [{ series: [{ point: 0.5 }, { point: 1.2 } ...] }, ..., null, null]
 let predictions = timePoints.map(tp => {
 if (tp.week > 30) {
@@ -27,13 +28,15 @@ if (tp.week > 30) {
 } else {
     // Provide 10 week ahead predictions
     return {
-    series: rseq(10).map(r => { return { point: r } })
+    series: rseq(10).map(r => { return { point: r}})
     }
 }
 })
+
+
 let data = {
   timePoints,
-  models: [
+    models: [
     {
       id: 'SIRD',
       meta: {
@@ -41,7 +44,7 @@ let data = {
         description: 'Basado en el model compartamental simple',
         url: 'http://github.com'
       },
-      pinned: true, // Setting true shows the model in top section of the legend
+      pinned: false, // Setting true shows the model in top section of the legend
                      // In case of absence of `pinned` key (or false), the model
                      // goes in the bottom section
       predictions,
@@ -55,13 +58,14 @@ let data = {
           // Style for the confidence area (shaded region around the line)
         },
         line: {
-          color: '#4682b4'
+          color: 'black'
           // Style for the main line
         }
       }
     }
   ]
 }
+
 
 
 
