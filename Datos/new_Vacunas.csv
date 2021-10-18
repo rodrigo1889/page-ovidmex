@@ -1,9 +1,9 @@
 Marca,Dosis_disp,Dosis_comp,abrev,Porcentaje,Pie
-Tozinameran Comirnaty BNT162b2 (Pfizer-BioNTech),33022275,34000000,Tozinameran BNT162b2 (Pfizer-BioNTech),97.12433823529412,0.17360224661730916
-ADZ1222/Covishield Serum (Oxford/AstraZeneca),45427800,77000000,ADZ1222/Covishield  (Oxford-AstraZeneca),58.997142857142855,0.39315802910390607
+Tozinameran Comirnaty BNT162b2 (Pfizer-BioNTech),34210995,34000000,Tozinameran BNT162b2 (Pfizer-BioNTech),100.62057352941177,0.17360224661730916
+ADZ1222/Covishield Serum (Oxford/AstraZeneca),49609700,77000000,ADZ1222/Covishield  (Oxford-AstraZeneca),64.42818181818181,0.39315802910390607
 CoronaVac (Sinovac BioTech),20000000,20000000,CoronaVac (Sinovac BioTech),100.0,0.10211896859841715
-GAM-COVID-Vac Sputnik V (Centro Nacional de Epidemiología y Microbiología Gamaleya ),6900000,24000000,GAM-COVID-Vac Sputnik V (Gamaleya),28.75,0.12254276231810059
-AD5-nCOV Convidecia (CanSino Biologics-Academia Militar de Ciencias China),8149930,36000000,AD5-nCOV Convidecia (CanSino Biologics),22.638694444444443,0.1838141434771509
+GAM-COVID-Vac Sputnik V (Centro Nacional de Epidemiología y Microbiología Gamaleya ),11900000,24000000,GAM-COVID-Vac Sputnik V (Gamaleya),49.583333333333336,0.12254276231810059
+AD5-nCOV Convidecia (CanSino Biologics-Academia Militar de Ciencias China),9033650,36000000,AD5-nCOV Convidecia (CanSino Biologics),25.09347222222222,0.1838141434771509
 Ad26.COV2.S (Johnson & Johnson),1350000,1350000,Ad26.COV2.S (Johnson & Johnson),100.0,0.0068930303803931585
 Spikevax mRNA-1273 Elasomeran (Moderna/Instituto Nacional de Alergias y Enfermedades Infecciosas de EUA),3500000,3500000,Spikevax mRNA-1273 Elasomeran (Moderna),100.0,0.017870819504723003
 BBIP-CorV (Sinopharm/Grupo Nacional Farmaceutico Chino-Instituto de Productos Biológicos de Beijing),0,0,BBIP-CorV lnCoV (Sinopharm-Beijing),,0.0
