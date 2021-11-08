@@ -1,19 +1,19 @@
 Alc,personas,cobertura,porcen,Vacs
-Álvaro Obregon,612039,456504,74.5874037438791,Pfizer/Astra/Sputnik
-Azcapotzalco,382948,340256,88.8517501070642,Pfizer/Sputnik
-Benito Juarez,376093,286972,76.3034674934125,Astra/Sputnik
-Coyoacan,568012,461910,81.3204650605973,Pfizer/Sputnik/Astra
-Cuajimalpa,176925,151344,85.5413310724883,Pfizer/Astra
-Cuauhtemoc,488637,379359,77.6361593575599,Pfizer/Astra
-Gustavo A. Madero,1054609,819155,77.6738108626041,Pfizer/Sputnik
-Iztacalco,360383,285312,79.1691062009029,Astra/Sputnik/Sinovac
-Iztapalapa,1501704,1120233,74.5974572885203,Astra/Sputnik
-Magdalena Contreras,203245,191930,94.4328273758272,Astra/Spunik/Pfizer
-Miguel Hidalgo,325482,338862,104.110826405147,Pfizer/Sputnik
-Milpa Alta,110951,87444,78.8131697776496,Pfizer/Astra/Sinovac/Sputnik
-Tlahuac,305628,257380,84.2134882929575,Pfizer/Astra/Sputnik
-Tlalpan,558688,427929,76.5953448078355,Pfizer/Astra/Sinovac
-Venustiano Carranza,405034,316919,78.2450362191816,Pfizer/Astra
-Xochimilco,351442,312606,88.9495279448671,Pfizer/Astra/Sputnik
-Personal educativo,328807,283365,86.1797346163555,CanSino
-Total,8110627,7075402,87.2361902476837,Pfizer/Astra/Sputnik/Cansino/Sinovac
+Álvaro Obregon,612039,456504,94,Pfizer/Astra/Sputnik
+Azcapotzalco,382948,340256,98,Pfizer/Sputnik
+Benito Juarez,376093,286972,86,Astra/Sputnik
+Coyoacan,568012,461910,91,Pfizer/Sputnik/Astra
+Cuajimalpa,176925,151344,95,Pfizer/Astra
+Cuauhtemoc,488637,379359,97,Pfizer/Astra
+Gustavo A. Madero,1054609,819155,97,Pfizer/Sputnik
+Iztacalco,360383,285312,99,Astra/Sputnik/Sinovac
+Iztapalapa,1501704,1120233,94,Astra/Sputnik
+Magdalena Contreras,203245,191930,94,Astra/Spunik/Pfizer
+Miguel Hidalgo,325482,338862,104,Pfizer/Sputnik
+Milpa Alta,110951,87444,97,Pfizer/Astra/Sinovac/Sputnik
+Tlahuac,305628,257380,94,Pfizer/Astra/Sputnik
+Tlalpan,558688,427929,96,Pfizer/Astra/Sinovac
+Venustiano Carranza,405034,316919,108,Pfizer/Astra
+Xochimilco,351442,312606,98,Pfizer/Astra/Sputnik
+Personal educativo,328807,283365,96,CanSino
+Total,8110627,7075402,100,Pfizer/Astra/Sputnik/Cansino/Sinovac
