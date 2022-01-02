@@ -1,10 +1,11 @@
 Marca,Dosis_disp,Dosis_comp,abrev,Porcentaje,Pie
-Tozinameran Comirnaty BNT162b2 (Pfizer-BioNTech),35989395,34000000,Tozinameran BNT162b2 (Pfizer-BioNTech),105.85116176470588,0.17360224661730916
-ADZ1222/Covishield Serum (Oxford/AstraZeneca),65306500,77000000,ADZ1222/Covishield  (Oxford-AstraZeneca),84.81363636363636,0.39315802910390607
-CoronaVac (Sinovac BioTech),20000000,20000000,CoronaVac (Sinovac BioTech),100.0,0.10211896859841715
-GAM-COVID-Vac Sputnik V (Centro Nacional de Epidemiología y Microbiología Gamaleya ),19100000,24000000,GAM-COVID-Vac Sputnik V (Gamaleya),79.58333333333333,0.12254276231810059
-AD5-nCOV Convidecia (CanSino Biologics-Academia Militar de Ciencias China),11880130,36000000,AD5-nCOV Convidecia (CanSino Biologics),33.00036111111111,0.1838141434771509
-Ad26.COV2.S (Johnson & Johnson),1350000,1350000,Ad26.COV2.S (Johnson & Johnson),100.0,0.0068930303803931585
-Spikevax mRNA-1273 Elasomeran (Moderna/Instituto Nacional de Alergias y Enfermedades Infecciosas de EUA),3500000,3500000,Spikevax mRNA-1273 Elasomeran (Moderna),100.0,0.017870819504723003
+Tozinameran Comirnaty BNT162b2 (Pfizer-BioNTech),47250645,51000000,Tozinameran BNT162b2 (Pfizer-BioNTech),92.64832352941177,0.26722556981922974
+AZD1222/Covishield Serum (Oxford/AstraZeneca),85557100,77000000,AZD1222/Covishield  (Oxford-AstraZeneca),111.11311688311689,0.4034582132564842
+CoronaVac (Sinovac BioTech),20000000,20000000,CoronaVac (Sinovac BioTech),100.0,0.1047943411055803
+GAM-COVID-Vac Sputnik V (Centro Nacional de Epidemiología y Microbiología Gamaleya ),20000000,24000000,GAM-COVID-Vac Sputnik V (Gamaleya),83.33333333333333,0.12575320932669637
+AD5-nCOV Convidecia (CanSino Biologics-Academia Militar de Ciencias China),14124840,14000000,AD5-nCOV Convidecia (CanSino Biologics),100.89171428571429,0.07335603877390622
+Ad26.COV2.S (Johnson & Johnson),1350000,1350000,Ad26.COV2.S (Johnson & Johnson),100.0,0.00707361802462667
+Spikevax mRNA-1273 Elasomeran (Moderna/Instituto Nacional de Alergias y Enfermedades Infecciosas de EUA),3500000,3500000,Spikevax mRNA-1273 Elasomeran (Moderna),100.0,0.018339009693476554
 BBIP-CorV (Sinopharm/Grupo Nacional Farmaceutico Chino-Instituto de Productos Biológicos de Beijing),0,0,BBIP-CorV lnCoV (Sinopharm-Beijing),,0.0
 Covaxin BBV152 (Bharat Biotech),0,0,Covaxin BBV152 (Bharat Biotech),,0.0
+CIGB-66 Abdala (Centro de Ingeniería Genética y Biotecnología de Cuba CIGB),0,0,CIGB-66 Abdala (Centro de Genética de Cuba),,0.0
