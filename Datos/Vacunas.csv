@@ -1,11 +1,11 @@
-Marca,Dosis_disp,Dosis_comp,abrev
-Tozinameran Comirnaty BNT162b2 (Pfizer-BioNTech),47250645,51000000,Tozinameran BNT162b2 (Pfizer-BioNTech)
-AZD1222/Covishield Serum (Oxford/AstraZeneca),85557100,77000000,AZD1222/Covishield  (Oxford-AstraZeneca)
-CoronaVac (Sinovac BioTech),20000000,20000000,CoronaVac (Sinovac BioTech)
-GAM-COVID-Vac Sputnik V (Centro Nacional de Epidemiología y Microbiología Gamaleya ),20000000,24000000,GAM-COVID-Vac Sputnik V (Gamaleya)
-AD5-nCOV Convidecia (CanSino Biologics-Academia Militar de Ciencias China),14124840,14000000,AD5-nCOV Convidecia (CanSino Biologics)
-Ad26.COV2.S (Johnson & Johnson),1350000,1350000,Ad26.COV2.S (Johnson & Johnson)
-Spikevax mRNA-1273 Elasomeran (Moderna/Instituto Nacional de Alergias y Enfermedades Infecciosas de EUA),3500000,3500000,Spikevax mRNA-1273 Elasomeran (Moderna)
-BBIP-CorV (Sinopharm/Grupo Nacional Farmaceutico Chino-Instituto de Productos Biológicos de Beijing),0,0,BBIP-CorV lnCoV (Sinopharm-Beijing)
-Covaxin BBV152 (Bharat Biotech),0,0,Covaxin BBV152 (Bharat Biotech)
-CIGB-66 Abdala (Centro de Ingeniería Genética y Biotecnología de Cuba CIGB),0,0,CIGB-66 Abdala (Centro de Genética de Cuba)
+Marca,Dosis_disp,Dosis_comp,abrev,ab
+Tozinameran Comirnaty BNT162b2 (Pfizer-BioNTech),47250645,51000000,Tozinameran BNT162b2 (Pfizer-BioNTech),BNT162b2
+AZD1222/Covishield Serum (Oxford/AstraZeneca),85557100,77000000,AZD1222/Covishield  (Oxford-AstraZeneca),Vaxevria
+CoronaVac (Sinovac BioTech),20000000,20000000,CoronaVac (Sinovac BioTech),CoronaVac
+GAM-COVID-Vac Sputnik V (Centro Nacional de Epidemiología y Microbiología Gamaleya ),20000000,24000000,GAM-COVID-Vac Sputnik V (Gamaleya),Sputnik-V
+AD5-nCOV Convidecia (CanSino Biologics-Academia Militar de Ciencias China),14124840,14000000,AD5-nCOV Convidecia (CanSino Biologics),Convidecia
+Ad26.COV2.S (Johnson & Johnson),1350000,1350000,Ad26.COV2.S (Johnson & Johnson),Janssen
+Spikevax mRNA-1273 Elasomeran (Moderna/Instituto Nacional de Alergias y Enfermedades Infecciosas de EUA),3500000,3500000,Spikevax mRNA-1273 Elasomeran (Moderna),Spikevax
+BBIP-CorV (Sinopharm/Grupo Nacional Farmaceutico Chino-Instituto de Productos Biológicos de Beijing),0,0,BBIP-CorV lnCoV (Sinopharm-Beijing),BBIP
+Covaxin BBV152 (Bharat Biotech),0,0,Covaxin BBV152 (Bharat Biotech),Covaxin
+CIGB-66 Abdala (Centro de Ingeniería Genética y Biotecnología de Cuba CIGB),0,0,CIGB-66 Abdala (Centro de Genética de Cuba),Abdala
