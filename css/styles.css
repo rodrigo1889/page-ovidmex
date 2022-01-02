@@ -1,6 +1,10 @@
 body {
     background: #C1C8E4;
+    margin-top: 0;
+    margin-right: 55;
+    margin-left: 55;
 }
+
 
 #weeklyzmvm {
     width: 100%;

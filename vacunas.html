@@ -72,7 +72,7 @@
             <script src="Java/app.js"></script>
 
             <section>
-                <h2> Entregas de marcas de vacunas </h2>
+                <h2> Panorama general de vacunación en México </h2>
                 <br>
                 <h3> Hasta el momento, en México se han autorizado 9 vacunas de diferentes laboratorios desde Diciembre del 2020 cuando se autorizó el 
                     uso de Emergencia, no uso completo, de la vacuna <i>Tozinameran</i> de las empresas Estadounidense y Alemana Pfizer-BioNTech.  </h3>
@@ -82,33 +82,57 @@
                     BioTech, agregando otras.  </h3>
                 <br>
 
-                <h3> Tanto la vacuna de la empresa Sinopharm así como  <i>Covaxin</i> de Bharat BioTech se encuentran autorizadas pero no 
+                <h3> Tanto la vacuna de la empresa Sinopharm del conglomerado Farmaceútico Chino, así como  <i>Covaxin</i> de Bharat BioTech de la India se encuentran autorizadas pero no 
+
                     en uso.  </h3>
                 <br>
 
                 <section>
                     <h2> Avance diario de dosis </h2>
                     <div id="administradas">
-                        <script src="//www.amcharts.com/lib/4/core.js"></script>
-                        <script src="//www.amcharts.com/lib/4/charts.js"></script>
-                        <script src="//www.amcharts.com/lib/4/themes/animated.js"></script>
-                        <script src="Java/daily-vax.js"></script>
+                        <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+                        <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+                        <script>
+                            d3.csv("https://raw.githubusercontent.com/rodrigo1889/page-ovidmex/main/Datos/Tabla-vacunados.csv", function(err, rows){
+                                function unpack(rows, key) {
+                                    return rows.map(function(row) { return row[key]; });
+                                    }
+                                    var data1 = {
+                                    type: "scatter",
+                                    name: 'Suavizado',
+                                    x: unpack(rows, 'date'),
+                                    y: unpack(rows, 'smooth'),
+                                    marker: {
+                                        color: "#ff5400",
+                                    }
+                                    }
+                                    var data2 = {
+                                    type: "bar",
+                                    name: "Avance diario",
+                                    x: unpack(rows,"date"),
+                                    y: unpack(rows,"new_vaccines"),
+                                    marker: {color:"#00566F"}
+                                    }
+
+                                    var data = [data1,data2];
+
+                                    var layout = {
+                                    yaxis: {
+                                        autorange: false,
+                                        range: [0,2500000],
+                                    },
+                                    plot_bgcolor: "#C1C8E4",
+                                    paper_bgcolor:"#C1C8E4",
+                                    };
+
+                                    Plotly.newPlot("administradas", data, layout);
+                                    })
+                        </script>
+                        
+                        
                     </div>
-                
-                    <h3>
-                        Las líneas negras en la gráfica anterior representan el tiempo entre las dos dosis recibidas por el editor de la página. Completó
-                        la cobertura con la vacuna CoronaVac de Sinovac Biotech. 
-                    </h3>
                 </section>
 
-                <section>
-                    <h2>
-                        Comparación con las potencias productoras 
-                    </h2>
-
-
-
-                </section>
 
                 
 
@@ -132,7 +156,44 @@
                             <script src="//www.amcharts.com/lib/4/charts.js"></script>
                             <script src="//www.amcharts.com/lib/4/themes/animated.js"></script>
                             <script src="Java/porcenjates.js"></script>
-                        </div>       
+                        </div> 
+                        
+                        <br> 
+                        <h2>Distribución de las entregas</h2>
+
+                        <div id="entregas">
+                            <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+                            <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+                            <script>
+                                d3.csv("https://raw.githubusercontent.com/rodrigo1889/page-ovidmex/main/Datos/Vacunas.csv", function(err, rows){
+                                    function unpack(rows, key) {
+                                        return rows.map(function(row) { return row[key]; });
+                                        }
+                                        var data1 = {
+                                        type: "pie",
+                                        name: 'Distribución de vacunas recibidas',
+                                        values: unpack(rows, 'Dosis_disp'),
+                                        labels: unpack(rows, 'abrev'),
+                                        marker: {
+                                            colors:[
+                                            '#00566F',"#20A39E","#EF5B5B","#FFC857","#424b54","#666e5a","#b66f65","#c98f29","#ccbab4"
+                                            ]
+                                        }
+                                        }
+
+                                        var data = [data1];
+
+                                        var layout = {
+                                        
+                                        plot_bgcolor: "#C3E5CA",
+                                        paper_bgcolor:"#C3E5CA",
+                                        };
+
+                                        Plotly.newPlot("entregas", data, layout);
+                                        })
+                            </script>
+
+                        </div>
                     </div>
 
                     <div class="column" style="background-color: #E4E5C2;">
@@ -143,7 +204,42 @@
                             <script src="//www.amcharts.com/lib/4/charts.js"></script>
                             <script src="//www.amcharts.com/lib/4/themes/animated.js"></script>
                             <script src="Java/compradas.js"></script>
-                        </div>   
+                        </div>
+                        
+                        <br> 
+                        <h2>Distribución de las compras</h2>
+
+                        <div id="dist-compras"><script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+                            <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+                            <script>
+                                d3.csv("https://raw.githubusercontent.com/rodrigo1889/page-ovidmex/main/Datos/Vacunas.csv", function(err, rows){
+                                    function unpack(rows, key) {
+                                        return rows.map(function(row) { return row[key]; });
+                                        }
+                                        var data1 = {
+                                        type: "pie",
+                                        name: 'Distribución de vacunas compradas',
+                                        values: unpack(rows, 'Dosis_comp'),
+                                        labels: unpack(rows, 'abrev'),
+                                        marker: {
+                                            colors:[
+                                            '#00566F',"#20A39E","#EF5B5B","#FFC857","#424b54","#666e5a","#b66f65","#c98f29","#ccbab4"
+                                            ]
+                                        }
+                                        }
+
+                                        var data = [data1];
+
+                                        var layout = {
+                                        
+                                        plot_bgcolor: "#E4E5C2",
+                                        paper_bgcolor:"#E4E5C2",
+                                        };
+
+                                        Plotly.newPlot("dist-compras", data, layout);
+                                        })
+                            </script>
+                        </div>
                     </div>
                 </div>
             </section>
